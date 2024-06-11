@@ -1,0 +1,345 @@
+/* 전체 */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.total {
+    border: 1px solid rgb(216, 187, 187);
+    border-radius: 10px 10px 10px 10px;
+    width: 500px;
+    max-width: 800px;
+    height: 95vh;
+    max-height: 100vh;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(255, 84, 84, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 헤더파트 */
+.navigation {
+    border: 1px solid rgb(255, 150, 150);
+    border-radius: 10px 10px 0px 0px;
+    background: -webkit-linear-gradient(right, #f7a061, #dc2a2a);
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.gps {
+    display: flex;
+}
+
+.gpslocation {
+    color: #ffffff;
+    font-style: bold;
+}
+
+.gps img {
+    margin-left: 15px;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    display: flex;
+}
+
+.gpslocation {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.second {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    display: flex;
+}
+
+.second img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    display: flex;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.search input {
+    flex-grow: 1;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 3px 50px;
+    height: 20px;
+    width: 300px;
+}
+
+.search .button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    width: 15%;
+}
+
+.search .button:hover {
+    background-color: #e68900;
+}
+
+/* 바디 부분 */
+.totalbody,
+.totalbody * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;
+    font-size: 12px;
+}
+
+.totalbody {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+}
+
+.placeinfo_wrap {
+    position: absolute;
+    bottom: 28px;
+    left: -150px;
+    width: 300px;
+}
+
+.placeinfo {
+    width: 70%;
+    height: 15%;
+    position: absolute;
+    bottom: calc(8% + 10px);
+    /* footer 위에 위치하도록 설정 */
+    left: 50%;
+    /* 가운데 정렬 */
+    transform: translateX(-50%);
+    z-index: 1000;
+    /* 다른 요소 위에 표시되도록 설정 */
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.placeinfo:nth-of-type(n) {
+    border: 0;
+    box-shadow: 0px 1px 2px #888;
+}
+
+.placeinfo_wrap .after {
+    content: '';
+    position: relative;
+    margin-left: -12px;
+    left: 50%;
+    width: 22px;
+    height: 12px;
+    background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png');
+}
+
+.placeinfo a,
+.placeinfo a:hover,
+.placeinfo a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.placeinfo a,
+.placeinfo span {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.placeinfo div {
+    margin: 5px 5px 5px 5px;
+    cursor: default;
+    font-size: 13px;
+}
+
+.placeinfo .title {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 6px 6px 6px 6px;
+    margin: -1px -1px 0 -1px;
+    width: 100%;
+    padding: 8px;
+    color: #fff;
+    background: #d95050;
+    /* background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center; */
+}
+
+.placeinfo .number {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 클릭 정보 */
+.bookcall {
+    display: flex;
+}
+
+.booking img {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    display: flex;
+}
+
+.call img {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    display: flex;
+}
+
+/* 풋터 부분 */
+footer {
+    border: 1px solid rgb(255, 255, 255);
+    height: 8vh;
+    border-radius: 0px 0px 10px 10px;
+    background: -webkit-linear-gradient(right, #f7a061, #dc2a2a);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* 즐겨찾기 팝업 부분 */
+
+/* 팝업 스타일 */
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    /* 팝업 창의 너비를 조절해주세요 */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* 팝업 창이 다른 요소들 위에 나타나도록 z-index 값을 적절히 조절해주세요 */
+}
+
+.popup-content {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 11;
+    /* 팝업 내용이 팝업 창보다 위에 나타나도록 설정합니다. */
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* 전화 팝업 */
+
+.popup2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    height: 60%;
+    text-align: center;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.keypad {
+    margin-top: 20px;
+}
+
+.keypad-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.keypad button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.keypad button:hover {
+    background-color: #e0e0e0;
+}
+

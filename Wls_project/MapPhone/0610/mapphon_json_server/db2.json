@@ -1,0 +1,69 @@
+{
+    "login": [
+        {
+            "id": "",
+            "pass": ""
+        }
+    ],"bookmark": [
+        {
+            "title": "지에스안과의원",
+            "jibun": "서울 강남구 역삼동 825-15",
+            "phone": "02-3469-0900",
+            "id": "0"
+        },
+        {
+            "title": "",
+            "jibun": "",
+            "phone": "",
+            "id": ""
+        }
+    ],
+    "foodmap": [
+        {
+            "title": "",
+            "jibun": "",
+            "phone": "",
+            "id": ""
+        }
+    ],
+    "bankmap": [
+        {
+            "title": "",
+            "jibun": "",
+            "phone": "",
+            "id": ""
+        }
+    ],
+    "cafemap": [
+        {
+            "title": "",
+            "jibun": "",
+            "phone": "",
+            "id": ""
+        }
+    ],
+    "hotelmap": [
+        {
+            "title": "",
+            "jibun": "",
+            "phone": "",
+            "id": ""
+        }
+    ],
+    "hospitalmap": [
+        {
+            "title": "",
+            "jibun": "",
+            "phone": "",
+            "id": ""
+        }
+    ],
+    "pharmacymap": [
+        {
+            "title": "",
+            "jibun": "",
+            "phone": "",
+            "id": ""
+        }
+    ]
+}
